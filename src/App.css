@@ -1,38 +1,551 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-image: url("../public/HeaderBackground.png");
+    background-repeat: no-repeat;
+}
+
+.headerWrapper {
+    display: flex;
+    width: 90vw;
+    max-width: 1000px;
+    height: 176px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerWrapper {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerDisplay {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerImg {
+        height: 200px;
+        width: 200px;
+        margin-top: -50px;
+    }
+}
+
+.headerMenu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerMenu {
+        display: flex;
+    }
+}
+
+
+.headerTextWrapper {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textShadow {
+    color: white;
+    font-family: "Redaction 35";
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -270px;
+}
+
+@media only screen and (max-width: 600px) {
+    .landingContainer {
+        width: 100vw;
+    }
+}
+
+.landingText {
+    font-family: 'Alice in Wonderland';
+    color: white;
+    font-size: 110px;
+    text-align: center;
+    margin-top: -360px;
+}
+
+@media only screen and (max-width: 500px) {
+    .landingText {
+        font-size: 60px;
+    }
+
+}
+
+.landingButton {
+    width: 293px;
+    height: 110px;
+    font-weight: 600;
+    background-image: url("../public/button_background.png");
+    background-position: center center;
+    background-size: auto;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Redaction 35";
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .landingButton {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img1 {
+        width: 116px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img2 {
+        width: 66px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img3 {
+        width: 56px;
+        height: 20px;
+    }
+}
+
+
+.secondHeader {
+    margin-top: -50px;
+    font-family: "Alice in Wonderland";
+    font-size: 32px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .lightning {
+        display: none;
+    }
+}
+
+.landingImgWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px ;
+}
+
+@media only screen and (max-width: 600px) {
+    .landingImgWrapper {
+        gap: 20px;
+    }
+}
+
+.landingSocialMediaWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 120px;
+    margin-top: -1px;
+}
+
+.contentBackground {
+    background-color: rgb(21,10,15);
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 101vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentBackground {
+        width: 100vw;
+    }
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.aboutText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    padding: 20px;
+    font-family: "Redaction 35", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutText {
+        width: 76.6vw;
+        font-size: 15px;
+    }
+}
+
+.burnMechanismContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .burnMechanismContainer {
+        flex-direction: column-reverse;
+        gap: 50px
+    }
+}
+
+.reverseContainer {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1100px) {
+    .reverseContainer {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .img2cat {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .reverseContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+.headerText {
+    font-family: "Alice in Wonderland", sans-serif;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerText {
+        text-align: center;
+        font-size: 27px;
+    }
+}
+
+.contentWrapper {
+    max-width: 474px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentWrapper {
+        max-width: 76.6vw;
+        text-align: center;
+    }
+}
+
+.contentText1 {
+    font-family: "Redaction 35";
+    font-size: 20px;
+    color: rgba(255, 199, 42, 1);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentText1 {
+        font-size: 15px;
+    }
+}
+
+
+.contentText2 {
+    font-family: "Redaction 35";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentText2 {
+        font-size: 15px;
+    }
+}
+
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.platformFeatureContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    width: 1200px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .platformFeatureContainer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+.platformFeatureItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.otcPlatformAdvantage {
+    gap: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+    .platformFeatureItemContainer {
+        gap: 5px;
+        width: 76vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .firefooter {
+        width: 700px;
+        height: 70px;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .firefooter {
+        width: 371px;
+        height: 70px;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .footer {
+        width: 90vw;
+        text-align: center;
+    }
+}
+
+
+.background-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 101vw;
+    height: 99vh;
+    z-index: -1;
+}
+
+.background-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-wrapper {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .dropdown-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 270px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dropdown-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 220px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .handleDropdown {
+        margin-bottom: -100px;
+    }
+}
+
+.dropdown-wrapper .dropdown {
+    background: #fff;
+    width: 200px;
+    height: 130px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    font-family: "Open Sans";
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    color: #000000;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.3s ease;
+    padding: 0;
+}
+
+ul::-webkit-scrollbar {display:none;}
+
+ul.active {
+    height: 130px;
+    overflow: auto;
+}
+
+li {
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.tcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tcontainer {
+        display: none;
+    }
+}
+
+
+.tItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.tHiddenContainer {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tHiddenContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+
+.tHiddenItemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
 }
