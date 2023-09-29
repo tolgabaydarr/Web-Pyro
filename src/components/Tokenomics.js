@@ -35,10 +35,10 @@ export const Tokenomics = () => {
 
                     </div>
                     <div className={"tHiddenItemContainer"}>
-                        <span className={"contentText2"}>0x000000000000000000</span>
+                        <span className={"contentText2"}>Coming Soon</span>
                         <span className={"contentText2"}>10,000,000</span>
                         <span className={"contentText2"}>2,500,000</span>
-                        <span className={"contentText2"}>4% / 4%</span>
+                        <span className={"contentText2"}>5% / 5%</span>
                     </div>
                 </div>
             </div>
