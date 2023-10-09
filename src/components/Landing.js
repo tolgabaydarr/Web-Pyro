@@ -6,7 +6,7 @@ export const Landing = () => {
             <BackgroundVideo/>
             <p className={"landingText"}>LET'S BURN</p>
             <div className={"landingButton"}>
-                <span style={{marginTop: -20}}>LAUNCH DAPP</span>
+                <a href={"https://app.pyrotoken.finance"} rel="noreferrer" target="_blank" style={{marginTop: -20, textDecoration: "none", color: "white"}}>LAUNCH DAPP</a>
             </div>
             <div className={"landingSocialMediaWrapper"}>
                 <a href={"https://twitter.com/PyroERC"} rel="noreferrer" target="_blank">
